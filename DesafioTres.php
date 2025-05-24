@@ -16,7 +16,7 @@ class DesafioDos
     {
         $lotes = [];
         $cnx = Database::getConnection();
-        $stmt = $cnx->query("SELECT * FROM debts WHERE lote = '$loteID' LIMIT 5");
+        $stmt = $cnx->query("SELECT * FROM debts WHERE lote = '$loteID'");
 
         while ($rows = $stmt->fetchArray(SQLITE3_ASSOC)) {
             $lotes[] = (object) $rows;
@@ -26,4 +26,4 @@ class DesafioDos
     }
 }
 
-DesafioDos::retriveLotes('00148');
+DesafioDos::retriveLotes(readline());
