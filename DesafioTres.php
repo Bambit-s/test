@@ -11,7 +11,7 @@ class DesafioDos
 
         echo (json_encode(self::getLotes($loteID)));
     }
-
+//
     private static function getLotes(string $loteID)
     {
         $lotes = [];

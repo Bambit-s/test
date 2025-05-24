@@ -2,7 +2,7 @@
 error_reporting(E_ALL & ~E_NOTICE & ~E_WARNING);
 class Database
 {
-
+//
     static  $dbName = 'idesa.db';
 
     public static function setDB(): void

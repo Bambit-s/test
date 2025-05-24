@@ -17,7 +17,7 @@ class DesafioUno
         $cobrar['data']['total']     = 0;
         $cobrar['data']['detail']    = [];
 
-
+//
 
         foreach ($lotes as $lote) {
 
